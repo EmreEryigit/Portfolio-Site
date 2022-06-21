@@ -1,38 +1,147 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
 }
+a:hover {
+  border-bottom: 1px solid black;
+}
+hr {
+  font-size: 10px;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 5px;
+}
+.homeContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+background-image: url("https://images.unsplash.com/photo-1634176866089-b633f4aec882?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80");
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+color: white;
+}
+
+.aboutContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  background-color: bisque;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+.para {
+  text-align: left;
+  flex: 1;
+}
+.pararight {
+  text-align: left;
+  flex: 1;
+}
+.photoContainer {
+display: flex;
+flex: 1;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+
+}
+.photo {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.paraContainer {
+ display: flex;
+ flex-direction: column;
+ flex:1;
+
+ 
+}
+
+.blogContainer{
+  width: 100%;
+  max-width: 1024px;
+  height: 100vh;
+  display: flex;
+padding: 10px;
+margin: 10px;
+
+
+
+}
+.paraRight{
+  text-align: left;
+}
+.paraLeft {
+  text-align: left;
+}
+.blogContainer>h1 {
+  display: flex;
+  
+}
+.BlogCont {
+  background-color: coral;
+}
+.footerContainer {
+  background-color: rgba(7, 7, 147, 0.642);
+  width: 100%;
+  margin: 10px 10px 45px 10px;
+  padding: 25px;
+
+
+  
+}
+.footerInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  width: 250px;
+  height: 25px;
+}
+::placeholder{
+  color: whitesmoke;
+}
+.footerButton {
+  border: none;
   color: white;
-}
+  background-color: goldenrod;
+  border-radius: 25px;
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
